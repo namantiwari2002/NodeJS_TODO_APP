@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended:true}));
 
 const mongoose = require('mongoose');
 const Item = require('./models/items')
-const mongodb = 'mongodb+srv://admin:admin@cluster0.rcfse.mongodb.net/item-database?retryWrites=true&w=majority';
+const mongodb = '<Connecting key here>';
 mongoose.connect(mongodb , { useNewUrlParser: true , useUnifiedTopology: true} )
 .then(()=>{
 console.log('connected')
